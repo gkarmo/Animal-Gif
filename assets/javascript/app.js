@@ -3,7 +3,7 @@ var animals= ["bird", "lion", "duck", "deer","chicken", "rabbit", "dinosaur"];
 function getAnimal() {
 // event.preventDefault();
 // Initial array of animal names
-var animal = $('#animal-input').val().trim();
+var animal = $(this).attr("data-name");
 var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=z6DHZTrQlbnpI5laMFUh8bAdDYwSv9Io&limit=4";
 
 $.ajax({
