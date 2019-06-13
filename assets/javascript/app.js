@@ -15,9 +15,11 @@ $.ajax({
     for(var i = 0; i < results.length; i++) {
         var resultsDiv = $('<div>')
         var picUrl = results[i].images.fixed_height.url
-        var pic = $('<img>').attr( { src: picUrl, height:"200px", width: "200px" } )
-        resultsDiv.prepend(pic)
-        $('#animal-gifs').append(pic)
+        var pic = $('<img>').attr( { src: picUrl, height:"200px", width: "200px" } ) 
+        var rating = $('<p>').text("Rating: " + results[i].rating)
+        resultsDiv.append(rating)
+        resultsDiv.append(pic)
+        $('#animal-gifs').append(resultsDiv)
     }
 })
 
