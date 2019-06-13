@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -23,18 +25,24 @@
     
             </div>
             <div class="col-lg-4">
-                <strong><p>Add an animal</p></strong>
+                <strong><p class="title">Add an animal</p></strong>
                 <form id="movie-form">
                     <input type="text" id="animal-input">
                     <br>
-                    <br>
-                    <input id="add-animal" type="submit" value="Submit">
+                    <input id="add-animal" type="submit" value="Submit" class="animal-btn">
                   </form>
             </div>
         </div>
     </div>
-
-    <div id="animal-gifs"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="animal-gifs"></div>
+            </div>
+        </div>
+    </div>
+    
 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
